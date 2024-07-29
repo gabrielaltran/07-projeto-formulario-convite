@@ -25,6 +25,8 @@
 --input-stroke: #363B40;
 --input-placeholder: #869198;
 
+--filter-gray: brightness(0) saturate(100%) invert(64%) sepia(6%) saturate(524%) hue-rotate(160deg) brightness(88%) contrast(86%);
+
 --shape-background: #131516;
 --shape-body: #212427;
 --shape-button: #2D3136;
@@ -45,15 +47,21 @@
 --body-xs: 12px var(--open-sans);
 }
 
-body {
-   background-color: var(--shape-background);
-   overflow: hidden;
-}
-
 img {
    max-width: 100%;
    height: auto;
  }
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: var(--shape-background);
+   overflow: hidden;
+   gap: 20px;
+}
+
 
 .flex {
    display: flex;
