@@ -37,10 +37,19 @@
 --baloo-2: "Baloo 2", sans-serif;
 --open-sans: "Open Sans", sans-serif;
 
---logo: regular 40px/auto var(--leckerli);
+--logo: 40px var(--leckerli);
 --heading-md: 28px var(--baloo-2);
 --heading-sm: 18px var(--baloo-2);
 --body-md: 16px var(--open-sans);
 --body-sm: 14px var(--open-sans);
 --body-xs: 12px var(--open-sans);
 }
+
+body {
+   overflow: hidden;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+ }
