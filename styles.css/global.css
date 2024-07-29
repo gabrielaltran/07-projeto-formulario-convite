@@ -46,6 +46,7 @@
 }
 
 body {
+   background-color: var(--shape-background);
    overflow: hidden;
 }
 
@@ -53,3 +54,7 @@ img {
    max-width: 100%;
    height: auto;
  }
+
+.flex {
+   display: flex;
+}
