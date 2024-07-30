@@ -1,2 +1,24 @@
-@import url(fields.css);
+@import url(fields/index.css);
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 24px;
+}
+
+legend {
+  color: var(--text-heading);
+  font: var(--heading-sm);
+  margin-bottom: 24px;
+}
+
+fieldset + fieldset {
+  margin-top: 24px;
+}
 

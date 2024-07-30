@@ -5,6 +5,8 @@
 }
 
 :root {
+--reference: 1px solid red;
+
 --brand-light: #59B2FF;
 --brand-mid: #3487CF;
 --brand-dark: #1D6FB6;
@@ -54,10 +56,13 @@ body {
 
    background-color: var(--shape-background);
    overflow: hidden;
-   gap: 20px;
 }
 
 
 .flex {
    display: flex;
+}
+
+.w-50 {
+   width: 50%
 }
