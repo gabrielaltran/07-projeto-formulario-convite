@@ -28,6 +28,7 @@
 --input-placeholder: #869198;
 
 --filter-gray: brightness(0) saturate(100%) invert(64%) sepia(6%) saturate(524%) hue-rotate(160deg) brightness(88%) contrast(86%);
+--filter-blue: brightness(0) saturate(100%) invert(55%) sepia(94%) saturate(445%) hue-rotate(180deg) brightness(100%) contrast(102%);
 
 --shape-background: #131516;
 --shape-body: #212427;

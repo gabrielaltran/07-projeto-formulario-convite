@@ -1,0 +1,45 @@
+label + .radio-wrapper {
+  margin-top: 12px;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100%;
+  padding: 4px;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  border-radius: 8px;
+  color: var(--text-body);
+}
+
+.radio-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  gap: 8px;
+
+  img {
+    width: 16px;
+    height: 16px;
+    filter: var(--filter-gray);
+  }
+  
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+  }
+
+  &:hover {
+    background-color: var(--shape-button);
+    border-radius: 4px;
+    cursor: pointer;
+
+    img {
+      filter: var(--filter-blue);
+    }
+  }
+}
