@@ -32,14 +32,34 @@ label + .radio-wrapper {
   & input:hover {
     all: unset;
   }
+}
 
-  &:hover {
-    background-color: var(--shape-button);
-    border-radius: 4px;
+
+.radio-color-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  input[type="radio"]{
+    all:unset;
+    margin-top: 0;
+    width: 28px;
+    height: 28px;
+    border: 6px solid var(--shape-button);
+    border-radius: 50%;
     cursor: pointer;
 
-    img {
-      filter: var(--filter-blue);
+    &:hover {
+      border: 6px solid var(--shape-hover);
+    }
+    
+    &:checked{
+      border: 6px solid var(--shape-hover);
+      outline: 2px solid var(--brand-light);
     }
   }
+}
+
+.radio-theme-wrapper {
+  display: grid;
 }
