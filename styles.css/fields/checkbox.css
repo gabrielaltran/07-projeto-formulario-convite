@@ -1,0 +1,84 @@
+.style-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+  column-gap: 12px;
+
+  & legend {
+    margin-bottom: 12px;
+  }
+
+  .switch-toggle {
+    display: flex;
+    height: 48px;
+    gap: 12px;
+  }
+
+  .toggle-switch {
+    display: inline-block;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    width: 64px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+
+    &:before,
+    &:after {
+      content: "";
+    }
+
+    &:before {
+      display: block;
+      background-color: var(--input-stroke);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      transition: left 0.25s;
+    }
+
+    .toggle-checkbox:checked + & {
+      background: var(--brand-light);
+      border: 1px solid var(--input-stroke);
+
+      &:before {
+        background: white;
+        left: 35px;
+      }
+    }
+  }
+
+  .toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .toggle-label {
+    margin-left: 12px;
+    position: relative;
+    &:before {
+      content: "Escuro";
+    }
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:has(.toggle-checkbox:checked){
+      
+      .toggle-label {
+        
+        &:before {
+          content: "Claro";
+        }
+      }
+    }
+  }
+}

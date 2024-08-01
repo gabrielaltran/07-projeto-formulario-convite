@@ -13,20 +13,32 @@ label + .radio-wrapper {
   color: var(--text-body);
 }
 
-.radio-inner {
+.radio-type-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 4px;
   gap: 8px;
+  cursor: pointer;
 
   img {
     width: 16px;
     height: 16px;
-    filter: var(--filter-gray);
+    filter: var(--filter-gray);00
   }
-  
+
+  &:hover {
+    background-color: var(--shape-hover);
+    border-radius: 4px;
+    font: 600 var(--body-sm);
+    color: var(--text-heading);
+
+    img {
+      filter: var(--filter-blue);
+    }
+  }
+
   & input,
   & input:focus,
   & input:hover {
@@ -34,6 +46,13 @@ label + .radio-wrapper {
   }
 }
 
+.radio-color-wrapper {
+  margin: 0;
+ 
+  legend {
+  margin-bottom: 16px;
+ }
+}
 
 .radio-color-inner {
   display: flex;
@@ -61,5 +80,52 @@ label + .radio-wrapper {
 }
 
 .radio-theme-wrapper {
-  display: grid;
+  margin-bottom: 28px;
+  legend {
+    margin-bottom: 16px;
+  }
 }
+
+.event-themes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.themes {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 4px 4px 8px 4px;
+  gap: 18px;
+  width: 134px;
+  position: relative;
+  background-color: var(--shape-button);
+  border-radius: 8px;
+
+  img {
+    object-fit: cover;
+    height: 64px;
+    width: auto;
+    border-radius: 4px;
+  }
+
+  & input, & input:focus, & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover, &:focus-within {
+    background-color: var(--shape-hover);
+  }
+
+  &:has(:checked) {
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+
+
+
+
