@@ -101,6 +101,31 @@ main {
    gap: 16px;
 }
 
+.style-and-cover {
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+}
+
+.mail-phone {
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+}
+
+footer {
+   display: flex;
+   flex-direction: column;
+   width: 560px;
+   gap: 48px;
+   padding-top: 40px;
+
+   .line {
+      border: 1px solid var(--input-stroke);
+   }
+}
+
+
 
 
 

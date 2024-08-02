@@ -1,0 +1,58 @@
+
+
+.cover-photo-wrapper {
+  
+  legend {
+    margin-bottom: 12px;
+  }
+}
+
+.dropzone-area {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 12px;
+
+  .btn-select {
+    border-radius: 8px;
+    background-color: var(--shape-button);
+
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    gap: 8px;
+    padding: 4px 12px;
+
+    position: relative;
+
+    & input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      opacity: 0;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+      filter: var(--filter-blue);
+    }
+    
+    p {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    }
+  }
+
+  span {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
+}
+
+
+
